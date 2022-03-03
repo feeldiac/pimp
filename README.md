@@ -28,4 +28,54 @@ Tiene 4 etapas:
  
 ![elementos-diagrama-de-flujo](https://user-images.githubusercontent.com/75231007/156471378-1403b932-896d-4288-ba38-8b6e0ca25019.png)
 
+ ## Paradigmas de programación
+ 
+ Se trata de los diferentes estilos de usar la programación para resolver un problema.
+ 
+ ### Programación Imperativa
+ 
+ Se caracteriza por contar con una sucesión de instrucciones claramente definidas. El código fuente de los lenguajes imperativos encadena instrucciones una detrás de otra que determinan lo que debe hacer el ordenador en cada momento para alcanzar un resultado deseado. Los valores utilizados en las variables se modifican durante la ejecución del programa. [Ver más](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/programacion-imperativa/) 
+
+Tiene 3 enfoques principales:
+ 
+ #### Programación Estructurada
+ 
+ El flujo de control se define mediante bucles anidados, condicionales y subrutinas.
+ 
+ #### Programación Procedimental
+ 
+ Se basa en un número muy reducido de expresiones repetidas las cuales se engloban en procedimientos o funciones y se llaman según la necesidad de ejecución.
+ 
+ #### Programación modular
+ 
+ Se divide el programa en módulos o subprogramas, haciéndolo más legible y manejable. Es una evolución de la programación estructurada. Cada uno de los componentes de programa se diseñan, desarrollan y prueban con total independencia los unos de los otros.
+ 
+ ### Programación Declarativa
+ 
+ En pocas palabras, programación declarativa consiste en decirle a un programa lo que tiene que hacer en lugar de decirle cómo debería hacerlo. Este enfoque implica proporcionar un lenguaje específico de dominio (DSL) para expresar lo que el usuario quiere. El DSL resguarda a los usuarios de construcciones de bajo nivel, al tiempo que materializa el estado final deseado. [Ver más](https://www.toptal.com/software/la-programacion-declarativa-de-verdad-existe).
+ 
+ #### Programación Lógica
+ 
+Gira en torno al qué, no al cómo: se trabaja de forma descriptiva, estableciendo relaciones entre entidades, lo que obliga a los que los lenguaje tengan un alto nivel de abstracción. Este paradigma se basa en la fórmula "algoritmos = lógica + control" (la llamada Ecuación Informal de Kowalski), lo que significa que un algoritmo se crea especificando conocimiento mediante axiomas (lógica) y el problema se resuelve mediante un mecanismo de inferencia que actúa sobre el mismo (control). [Ver más](https://www.genbeta.com/desarrollo/lenguaje-prolog-ejemplo-paradigma-programacion-logica).
+ 
+ #### Programación funcional
+ 
+ La programación funcional se caracteriza por dividir la mayor cantidad posible de tareas en funciones, de esta forma estas tareas pueden ser usadas por otras funciones con diferentes objetivos. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior. [Ver más](https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional) 
+
+### Programación Orientada a Objetos
+
+Se construyen modelos que representan objetos de forma similar a cómo lo haríamos en la vida real. Dichos objetos tienen características (atributos) y comportamientos (métodos). Permite separar y jerarquizar los componentes de un programa.
+
+### Programación Reactiva
+
+Se basa en observar cambios en el flujo de datos (según los eventos que ocurren) y reaccionar o tomar acciones de acuerdo al cambio recibido.
+
+Deben ser:
+
+- Responsivos
+- Resilientes
+- Elásticos
+- Orientados a mensajes
+
+
  
