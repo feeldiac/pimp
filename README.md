@@ -126,4 +126,72 @@ Existen diferentes tipos de operadores en JavaScript, entre esos están:
 - De comparación simple (==, !=)
 - De comparación estricta (===, !==)
 - Lógicos (&&, ||)
- 
+
+## Funciones
+
+Una función es un bloque de código que nos permite agrupar una funcionalidad para usarla todas las veces que necesitemos.
+Normalmente, realiza una tarea específica y retorna un valor como resultado.
+
+### Declaración y estructura
+
+Existen dos formas de declarar las funciones. Declarándolas y expresándolas. Ambos tipos son muy similares pero presentando diferencias con respecto al Hoisting.
+Los _componentes_ de una función son:
+- Palabra reservada (function)
+- Nombre de la función 
+- Parámetros
+- Cuerpo 
+- Retorno (con la palabra clave return)
+
+#### Funciones declaradas
+
+Usan la estructura básica y pueden llevar un nombre luego de la palabra reservada function.
+```
+function saludar(nombre) {
+  return `Hola, ${nombre}`;
+}
+```
+#### Funciones expresadas
+
+Se asignan como valor a una variable. No tienen nombre en sí, son funciones _anónimas_.
+```
+const = function(nombre) {
+  return `Hola, ${nombre}`;
+}
+```
+
+### Invocación
+
+Podemos imaginar las funciones como si fueran máquinas. Durante la declaración nos ocupamos de construir la máquina y durante la invocación la ponemos a funcionar.
+
+A tener en cuenta:
+- En caso que la función tenga parámetros, se deben pasar lo argumentos en el orden correcto.
+- Es posible utilizar **valores por defecto** en caso de obviar algún parámetros.:point_down:
+```
+function saludar(nombre = 'visitante', 
+	apellido = 'anónimo') {
+	return 'Hola ' + nombre + ' ' + apellido;
+}
+```
+
+Llamamos parámetros a las variables que escribimos cuando definimos la función. Llamamos argumentos a los valores que enviamos cuando invocamos la función.
+
+### Scope
+
+El scope o ámbito se refiere al alcance que tiene una variable, es decir, desde dónde podemos acceder a ella. En JavaScript los scopes son definidos principalmente por las funciones.
+
+#### Scope global
+
+Las variables con scope global pueden ser accedidas desde cualquier parte del programa. Deben ser definidas fuera de función.
+
+#### Scope local
+
+Las variables con scope local sólo son accedidas dentro del bloque de código o función donde fueron definidas.
+
+### Arrow functions
+
+Corresponden a una manera más resumida de escribir las típicas funciones. Vinieron con la versión ES6 de 2015.
+Algunas de sus particularidades son:
+- No utilizan la palabra function. En su lugar utilizan el operador arrow (fat arrow).
+- Debe ser guardadas como valores de variables
+- Cuando tienen un único parámetro no es necesario encerrarlo en paréntesis.
+- Si el cuerpo de la función se desarrolla en una sola línea se puedo obviar la palabra return.
