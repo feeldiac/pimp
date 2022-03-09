@@ -77,5 +77,53 @@ Deben ser:
 - Elásticos
 - Orientados a mensajes
 
+## Variables
 
+Las **variables** son espacios de memoria en la computadora donde podemos almacenar distintos tipos de datos.
+
+En JavaScript exiten tres formas de definir una variable:
+
+- var: Es una forma poco usada actualmente. Las variables tiene un scope global y por tanto utilizar el mismo nombre para una variable definida con var hará que se pisen los valores entre sí. Se puede redefinir y modificar.
+- let: Tiene un scope o alcance de bloque. Se puede modificar pero no redeclarar.
+- const: Tiene un scope de bloque. No se puede modificar ni redeclarar.
+
+Como buena práctica se recomienda:
+- Usar camelCase para nombrar las variables.
+- Usar MAYÚSCULAS con guiones bajos entre palabras para declarar constantes.
+- 
+
+## Tipos de datos
+
+Los tipos de datos le permiten a JavaScript conocer las características y funcionalidades que estarán disponibles para ese dato.
+
+### Datos primitivos
+
+- number
+- string
+- boolean
+- undefined 
+- null
+- NaN
+
+### Datos complejos
+
+- Object literal
+- Array
+
+## Operadores
+
+Los operadores nos permiten manipular el valor de las variables, realizar operaciones y comparar sus valores.
+Los operadores aritméticos siempre devolverán el resultado numérico de la operación que se esté realizando.
+Los operadores de comparación siempre devolverán un booleano, es decir, true o false, como resultado.
+
+
+Existen diferentes tipos de operadores en JavaScript, entre esos están:
+
+- De asignación: (=)
+- Aritméticos: (+,-,*,/,++,--,%)
+- De concatenación (símbolo + usado entre strings)
+- De comparación (>,>=,<,<=)
+- De comparación simple (==, !=)
+- De comparación estricta (===, !==)
+- Lógicos (&&, ||)
  
