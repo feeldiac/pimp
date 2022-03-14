@@ -127,6 +127,14 @@ Existen diferentes tipos de operadores en JavaScript, entre esos están:
 - De comparación estricta (===, !==)
 - Lógicos (&&, ||)
 
+### Operadores lógicos
+
+Permiten combinar valores booleanos y retornan también un valor booleano
+
+- AND (&&): todos los valores deben evaluar como `true` para que el resultado sea `true`.
+- OR (||): al menos un valor debe evaluar como `true` para que el resultado sea `true`.
+- NOT (!): niega la condición, si era `true`será `false` y viceversa.
+
 ## Funciones
 
 Una función es un bloque de código que nos permite agrupar una funcionalidad para usarla todas las veces que necesitemos.
@@ -195,3 +203,47 @@ Algunas de sus particularidades son:
 - Debe ser guardadas como valores de variables
 - Cuando tienen un único parámetro no es necesario encerrarlo en paréntesis.
 - Si el cuerpo de la función se desarrolla en una sola línea se puedo obviar la palabra return.
+
+## Condicionales
+
+- If
+- Else/if
+- Else
+- If ternario
+- Switch
+
+## Ciclos
+
+Los ciclos nos permiten repetir instrucciones de manera sencilla. Podemos hacerlo una cantidad determinadas de veces o mientras se cumpla una condición.
+
+### Ciclo for
+
+Tiene tres partes. En el **inicio**, se define el valor inicial de nuestro contador. Luego en la **condición** se define el valor en el cual se debe detener la ejecución y por último, el **modificador** indica si el contador crece o decrece.
+
+```
+for (inicio; condición; modificador) {
+    //código que se ejecuta
+}
+```
+
+### Ciclo while
+
+Presenta una estructura similar al condicional if, usando una palabra reservada _while_ y unos paréntesis que encierran una condición. El código dentro de las llaves se ejecutará hasta que la condición deje de cumplirse.
+
+```
+while (condición) {
+    //código que se ejecutará
+    //modificación de la condición
+}
+```
+
+### Ciclo do while
+
+Similar al ciclo while pero **siempre se ejecutará al menos una vez**.
+
+```
+do {
+   //código que se ejecutará
+   //modificación de la condición
+} while (condición)
+```
