@@ -247,3 +247,55 @@ do {
    //modificación de la condición
 } while (condición)
 ```
+
+## Arrays 
+
+Nos permiten generar una colección de datos ordenados.
+
+### Estructura 
+
+Utilizamos corchetes [] para indicar el inicio y el fin de un array. Y usamos comas , para separar sus elementos. Dentro de un array, podemos almacenar la cantidad de elementos que queramos, sin importar el tipo de dato de cada uno. Es decir, podemos tener en un mismo array datos de tipo string, number, boolean y todos los demás.
+
+### Posiciones y longitud 
+
+Cada dato de un array ocupa una posición numerada conocida como índice. La primera posición de un array es siempre 0.
+Para acceder a un elemento puntual de un array, nombramos al array y, dentro de los corchetes, escribimos el índice al cual queremos acceder.
+
+
+Otra propiedad útil de los arrays es su **longitud**, o cantidad de elementos. Podemos saber el número de elementos usando la propiedad length. Para acceder al total de elementos de un array, nombramos al array y, seguido de un punto, escribiremos la palabra length.
+
+## Object literal
+
+Un objeto es una estructura de datos que puede contener propiedades y métodos. Para crearlo usamos llave de apertura y de cierre {}.
+
+```
+let auto = {
+  	patente : 'AC 134 DD',
+};
+```
+### Propiedades
+
+Un objeto puede tener la cantidad de propiedades que queramos. Si hay más de una, las separamos con comas ,.
+Con la notación objeto.propiedad accedemos al valor de cada una de ellas.
+
+### Métodos
+
+Una propiedad puede almacenar cualquier tipo de dato. Si una propiedad almacena una función, diremos que es un método del objeto. Con una estructura similar a la de las funciones expresadas, vemos que se crean mediante el nombre del método, seguido de una función anónima. Para ejecutar un método de un objeto usamos la notación objeto.metodo(). Los paréntesis del final son los que hacen que el método se ejecute.
+
+### this
+
+La palabra reservada this hace referencia al objeto en sí donde estamos parados. Es decir, el objeto en sí donde escribimos la palabra.
+Con la notación this.propiedad accedemos al valor de cada propiedad interna de ese objeto.
+
+```
+let tenista = {
+	nombre: 'Roger',
+apellido: 'Federer',
+saludar: function() { 
+return '¡Hola! Me llamo ' + this.nombre; 
+}
+};
+console.log(tenista.saludar()); // ¡Hola! Me llamo Roger
+```
+
+
