@@ -56,4 +56,63 @@ function compararCalificaciones(array1, array2) {
         }
     }
 }
-compararCalificaciones(asiaScores, euroScores);
+// compararCalificaciones(asiaScores, euroScores);
+
+//Extrabonus
+
+let arrayAInvertir = ['Liverpool', 'Chelsea', 'Manchester United', 'Manchester City'];
+
+//Array inverso
+function imprimirInverso(array) {
+    
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        let newElement = '';
+        
+        for (let j = element.length - 1; j >= 0; j--) {
+            const innerElement = element[j];
+            newElement += innerElement;
+        }
+        console.log(newElement);
+    }
+}
+// imprimirInverso(arrayAInvertir);
+
+function inversor(array) {
+    let newArray = [];
+    
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        let newElement = '';
+        
+        for (let j = element.length - 1; j >= 0; j--) {
+            const innerElement = element[j];
+            newElement += innerElement;
+        }
+        newArray.push(newElement);
+    }
+    return newArray;
+}
+// console.log(inversor(arrayAInvertir));
+
+//SumaArray()
+function sumArray(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        sum += element;
+    }
+    //Made it useful for strings too
+    typeof array[0] === 'string' ? sum = sum.slice(1,sum.length) : '';
+    return sum;   
+}
+// console.log(sumArray([10,3,10]));
+
+//Simulación Array.join()
+
+const join = function(array) {
+    return sumArray(array);
+}
+
+// console.log(join(['h', 'o', 'l', 'a']));
+// console.log(join(['c', 'h', 'a', 'u']));
