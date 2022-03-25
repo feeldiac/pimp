@@ -61,10 +61,20 @@ let banco = {
 // banco.extraccion('Jacki Shurmer', 200000);
 
 //Propiedad única
-let array = [{ nombre: 'Lean', edad: 27 }, { nombre: 'Eze', edad: 49}];
-function propiedadUnica(array, string) {
-        for (let key in array[0]) {
-            console.log(key);
-        }
+let array = [{ nombre: 'Lean', edad: 27 }, { nombre: 'Eze', edad: 49}, { nombre: 'Fer', edad: 23}, { pais: 'Colombia', departamento: 'Atlántico'}];
+function propiedadUnica(array, property) {
+    const newArray = [];
+    
+    //Objects could be different
+    for (let i = 0; i < array.length; i++) {
+      const element = array[i];
+      const keys = Object.keys(element);
+      const values = Object.values(element);
+      const uniquePropertyIndex = keys.indexOf(property);
+      const uniqueValue = values[uniquePropertyIndex];
+      const newObject = Object.fromEntries([[property, uniqueValue]]);
+      newArray.push(newObject);
+    }
+    return newArray;
 }
-propiedadUnica(array, 'nombre');
+console.log(propiedadUnica(array, 'pais'))
