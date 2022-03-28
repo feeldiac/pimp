@@ -77,4 +77,24 @@ function propiedadUnica(array, property) {
     }
     return newArray;
 }
-console.log(propiedadUnica(array, 'pais'))
+// console.log(propiedadUnica(array, 'pais'));
+
+
+//Calculador de notas
+const alumno = {
+  nombre: 'Ernesto Pérez',
+  numLegajo: 1202,
+  notas: [5.1, 6, 8, 8.5, 2.3], //Aprobación > 7
+}
+
+function calculadorDeNotas(alumno) {
+  let sumatoria = 0;
+  for (let i = 0; i < alumno.notas.length; i++) {
+    const nota = alumno.notas[i];
+    sumatoria += nota;
+  }
+  const promedio = sumatoria / alumno.notas.length;
+  console.log(`El estudiante ${alumno.nombre}, ${promedio >= 7 ? 'aprobó' : 'no aprobó'} y su promedio es ${promedio.toFixed(2)}`);
+}
+
+calculadorDeNotas(alumno);
